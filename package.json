@@ -1,0 +1,20 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "a resume and blog with backbone js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paul-Kijtapart/Blog.git"
+  },
+  "author": "Aor Nawattranakul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Paul-Kijtapart/Blog/issues"
+  },
+  "homepage": "https://github.com/Paul-Kijtapart/Blog#readme",
+  "dependencies": {}
+}

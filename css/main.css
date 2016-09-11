@@ -1,0 +1,94 @@
+* {
+    /*Target all elements*/
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+    /*1.4 em 14p*/
+    font-size: 62.5%;
+    font-family: arial, sans-serif;
+    color: black;
+}
+
+.card_layout {
+    background-color: white;
+    z-index: 4;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#blogApp {
+    /*This would allow child to be absolute*/
+    position: relative;
+    font-size: 1.6em;
+    margin: 0 auto;
+    width: 940px;
+    height: 2600px;
+    /*Avoid the overflow of the aside*/
+    overflow: hidden;
+}
+
+#side_bar {
+    height: inherit;
+    text-align: center;
+    float: left;
+    width: 220px;
+    position: fixed;
+    padding-top: 80px;
+    margin-right: 20px;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+}
+
+#logo {
+    margin-bottom: 40px;
+    display: block;
+    border-bottom: 1px dashed black;
+}
+
+.sb_icon_list_item {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.sb_icon_list {
+    margin-bottom: 40px;
+}
+
+.sb_social_list_span {
+    padding-left: 10px;
+}
+
+#social_title {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #221F51;
+}
+
+
+/*Start Of Main Content*/
+
+main {
+    padding-top: 20px;
+    width: 700px;
+    height: inherit;
+    float: right;
+}
+
+main h2 {
+    font-size: 1.6em;
+    text-shadow: 2px 2px 3px grey;
+    font-family: 'Lobster', cursive;
+    border-bottom: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+main .detail {
+    padding: 10px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and (max-width:980px)" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:768px)" href="css/style_768.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:600px)" href="css/style_600.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width:300px)" href="css/style_300.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <!-- Icons and Fonts from Google -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+</head>
+
+<body>
+    <div id="blogApp">
+        <!-- SideBar -->
+        <aside class="card_layout" id="side_bar">
+            <img src="" id="logo" alt="profile_logo">
+            <!-- Table for Media icons for side_bar sb -->
+            <ul class="sb_icon_list">
+                <li class="sb_icon_list_item">
+                    <!-- <i class="material-icons">account_circle</i> -->
+                    <span class="sb_social_list_span"> Profile </span>
+                </li>
+                <li class="sb_icon_list_item">
+                    <!-- <i class="material-icons">face </i> -->
+                    <span class="sb_social_list_span"> Blog </span>
+                </li>
+                <li class="sb_icon_list_item">
+                    <!-- <i class="material-icons">favorite</i> -->
+                    <span class="sb_social_list_span"> Hobbies </span>
+                </li>
+            </ul>
+            <h4 id="social_title">
+                <span> LET'S CONNECT </span>
+             </h4>
+            <ul id="sb_icon_list">
+                <li href="" class="sb_icon_list_item">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <span class="sb_social_list_span">LinkedIn </span>
+                </li>
+                <li href="" class="sb_icon_list_item">
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    <span class="sb_social_list_span">Youtube </span>
+                </li>
+                <li href="" class="sb_icon_list_item">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <span class="sb_social_list_span">Resume </span>
+                </li>
+            </ul>
+        </aside>
+        <!-- END of SideBar -->
+        <!-- Main Content -->
+        <main>
+            <div id="profile">
+                <div class="card_layout detail" id="about">
+                    <h2> About Me </h2>
+                    <!-- TODO: Sync description here -->
+                    <p id="description"></p>
+                </div>
+                <div class="card_layout detail" id="works">
+                    <h2> Work </h2>
+                </div>
+                <div class="card_layout detail" id="education">
+                    <h2> Education </h2>
+                </div>
+                <div class="card_layout detail" id="contact">
+                    <h2> Contact </h2>
+                </div>
+            </div>
+        </main>
+        <!-- End of Main -->
+    </div>
+    <!-- End of BlogApp -->
+    <script data-main="js/main.js" src="js/require.js"></script>
+</body>
+
+</html>
