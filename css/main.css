@@ -27,7 +27,6 @@ body {
     font-size: 1.6em;
     margin: 0 auto;
     width: 940px;
-    height: 2600px;
     /*Avoid the overflow of the aside*/
     overflow: hidden;
 }
@@ -89,6 +88,10 @@ main h2 {
     margin-bottom: 10px;
 }
 
+main h2 > i {
+    margin-left: 10px;
+}
+
 main .detail {
     padding: 10px;
     margin-bottom: 20px;
@@ -111,7 +114,17 @@ main .detail {
 /*End of Util CSS*/
 
 .CLEAR_FIX {
-    clear: both;
+    clear: right;
+}
+
+
+/*
+Remember to use this class on the children that want to 
+be at center of parent (Not on parent!)
+*/
+
+.CENTER {
+    margin: 0 auto;
 }
 
 
@@ -155,3 +168,55 @@ main .detail {
 
 
 /*Done Work Part*/
+
+
+/*Start of Education*/
+
+.diploma {
+    margin-bottom: 10px;
+}
+
+.diploma > p > span {
+    display: block;
+}
+
+.diploma > p > span:first-child {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.diploma > p > span:nth-child(2) {
+    float: right;
+}
+
+
+/*End of Education*/
+
+
+/*Start of Contact*/
+
+#contact form {
+    margin: 0 auto;
+}
+
+#contact form > div {
+    float: left;
+    padding: 0.5em 0.75em 0.5em 0.5em;
+}
+
+#contact form > div > label {
+    float: left;
+}
+
+#contact form > input[type='submit'] {
+    float: right;
+    margin-right: 10px;
+}
+
+#contact form input:focus,
+#contact form > textarea:focus {
+    background-color: #f5f5dc;
+}
+
+
+/*End of Contact*/

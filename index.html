@@ -57,13 +57,19 @@
         <main>
             <div id="profile">
                 <div class="card_layout detail" id="about">
-                    <h2> About Me </h2>
+                    <h2>
+                        About Me 
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                     </h2>
                     <!-- TODO: Sync description here -->
                     <p id="description"> My name is Trirutda Nawattranakul, a coordinator Assistant and an experienced chef. After having achieved both culinary certificate and administrative assistant certificate from Vancouver Community College, I have been developing my techical skills on both Office tools and data analysis. I am currently looking for a full-time administrator assistant.</p>
                 </div>
                 <!-- Start Of Work -->
                 <div class="card_layout detail" id="works">
-                    <h2> Work </h2>
+                    <h2> 
+                        Work 
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                    </h2>
                     <div class="work">
                         <div class="progressBar"> </div>
                         <div class="work_content">
@@ -109,12 +115,46 @@
                 <!-- End Of Work -->
                 <!-- Start of Education -->
                 <div class="card_layout detail" id="education">
-                    <h2> Education </h2>
+                    <h2> 
+                        Education  
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i> 
+                    </h2>
+                    <div class="diploma">
+                        <p>
+                            <span> Administrative Assistant Certificate </span>
+                            <span> Vancouver Community College</span>
+                            <span> Graduated in December 2015 </span>
+                        </p>
+                    </div>
+                    <div class="diploma">
+                        <p>
+                            <span> Customer Service and Cashier Training Certificate </span>
+                            <span> Diversecity Community </span>
+                            <span> Graduated in December 2012 </span>
+                        </p>
+                    </div>
                 </div>
                 <!-- End of Education -->
                 <!-- Start of contact -->
                 <div class="card_layout detail" id="contact">
                     <h2> Contact </h2>
+                    <form action="php/contact_form.php" method="post" target="_blank">
+                        <div>
+                            <label for="client_name"> Name </label>
+                            <input type="text" name="name" id="client_name" maxlength="30" required>
+                        </div>
+                        <div>
+                            <label for="client_email"> Email </label>
+                            <input type="email" name="email" id="client_email" maxlength="30" required>
+                        </div>
+                        <div>
+                            <label for="client_phone"> Phone </label>
+                            <input type="phone" name="phone" id="client_phone" minlength="10" max="20">
+                        </div>
+                        <label for="client_comment"></label>
+                        <textarea name="comment" id="client_comment" rows="4" cols="50" maxlength="200"> </textarea>
+                        <input type="submit" value="Send">
+                    </form>
                 </div>
                 <!-- End of Contact -->
             </div>
