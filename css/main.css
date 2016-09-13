@@ -85,10 +85,73 @@ main h2 {
     text-shadow: 2px 2px 3px grey;
     font-family: 'Lobster', cursive;
     border-bottom: 1px dashed black;
+    padding-bottom: 10px;
     margin-bottom: 10px;
 }
 
 main .detail {
     padding: 10px;
     margin-bottom: 20px;
+    line-height: 1.3em;
 }
+
+#about #description:first-letter {
+    font-style: italic;
+    font-weight: font-size: 1.9em;
+}
+
+
+/*Util CSS*/
+
+.unbold {
+    font-weight: normal;
+}
+
+
+/*End of Util CSS*/
+
+.CLEAR_FIX {
+    clear: both;
+}
+
+
+/*Work Part */
+
+.work {
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work .progressBar {
+    /*Set the height of the bar to be the same as content*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px yellow;
+    background-color: orange;
+}
+
+.work .work_content {
+    margin-left: 40px;
+}
+
+.work > * {
+    margin-bottom: 10px;
+}
+
+.work .duration span.content {
+    font-weight: bold;
+}
+
+.work ul {
+    list-style-type: none;
+    line-height: 1.7em;
+    margin-left: 20px;
+}
+
+
+/*Done Work Part*/
