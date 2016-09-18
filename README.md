@@ -1,5 +1,5 @@
 # Blog
-A responsive single page application with BackBone.js and Require.js.
+Ongoing: A responsive single page application with BackBone.js and Require.js.
 
 Responsibilities:
 - Wrote CSS for different screen sizes.
