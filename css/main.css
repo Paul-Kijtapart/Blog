@@ -13,6 +13,7 @@ body {
     font-size: 62.5%;
     font-family: arial, sans-serif;
     color: black;
+    /*height: 2000px;*/
 }
 
 .card_layout {
@@ -24,7 +25,7 @@ body {
 #blogApp {
     /*This would allow child to be absolute*/
     position: relative;
-    font-size: 1.6em;
+    font-size: 1.7em;
     margin: 0 auto;
     width: 940px;
     /*Avoid the overflow of the aside*/
@@ -32,35 +33,59 @@ body {
 }
 
 #side_bar {
+    overflow: hidden;
     height: inherit;
-    text-align: center;
     float: left;
     width: 220px;
     position: fixed;
-    padding-top: 80px;
+    top: 0px;
+    bottom: 0px;
+    text-align: center;
+    /* padding-top: 80px;
     margin-right: 20px;
     padding-bottom: 5000px;
-    margin-bottom: -5000px;
+    margin-bottom: -5000px;*/
 }
 
-#logo {
+#side_bar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#side_bar_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*The 'margin-right: -50%' is needed to compensate the 'left: 50%'. */
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+img[id='logo'] {
+    width: 50%;
+    margin: 0 auto;
     margin-bottom: 40px;
     display: block;
-    border-bottom: 1px dashed black;
+    border-radius: 20px;
+    box-shadow: 0 0 5px orange;
+    /*border-bottom: 1px dashed black;*/
+}
+
+ul.sb_icon_list {
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .sb_icon_list_item {
     list-style-type: none;
     margin-bottom: 10px;
     font-size: 1.2em;
-}
-
-.sb_icon_list {
-    margin-bottom: 40px;
+    margin-left: 50px;
 }
 
 .sb_social_list_span {
-    padding-left: 10px;
+    /*padding-left: 10px;*/
 }
 
 #social_title {
@@ -98,9 +123,11 @@ main .detail {
     line-height: 1.3em;
 }
 
+#about #description {}
+
 #about #description:first-letter {
     font-style: italic;
-    font-weight: font-size: 1.9em;
+    font-size: 1.9em;
 }
 
 
@@ -196,26 +223,41 @@ be at center of parent (Not on parent!)
 /*Start of Contact*/
 
 #contact form {
-    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+    font-size: 1.1em;
 }
 
-#contact form > div {
+#contact form label[for="client_comment"] {
     float: left;
-    padding: 0.5em 0.75em 0.5em 0.5em;
 }
 
-#contact form > div > label {
-    float: left;
+#contact form label[for="client_comment"] + textarea {
+    margin-left: 20px;
+}
+
+#contact form > * {
+    /*padding: 0.5em 0.75em 0.5em 0.75em;*/
+    margin-bottom: 10px;
+}
+
+#contact form > div > input:not([name='submit']) {
+    padding: 2px 0 2px 0;
+    font-size: 1.3em;
+}
+
+#contact form label {
+    /*text-shadow: 2px 2px 1px grey;*/
+    font-weight: bold;
 }
 
 #contact form > input[type='submit'] {
-    float: right;
-    margin-right: 10px;
-}
-
-#contact form input:focus,
-#contact form > textarea:focus {
-    background-color: #f5f5dc;
+    background-color: #3B5998;
+    color: white;
+    font-size: inherit;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding: 10px 10px 10px 10px;
 }
 
 

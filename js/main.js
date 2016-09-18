@@ -41,10 +41,12 @@ require.config({
 });
 
 // Start the main app logic.
-require(['backbone', 'app', 'router'],
-    function(Backbone, AppView, AppRouter) {
+require(['backbone', 'app', 'router', '../util/form'],
+    function(Backbone, AppView, AppRouter, Form) {
         new AppRouter();
         Backbone.history.start();
+
+        new Form();
 
         // Initialize the application view
         new AppView();

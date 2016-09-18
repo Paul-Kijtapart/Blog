@@ -11,46 +11,60 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <!-- Icons and Fonts from Google -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <div id="blogApp">
         <!-- SideBar -->
         <aside class="card_layout" id="side_bar">
-            <img src="" id="logo" alt="profile_logo">
-            <!-- Table for Media icons for side_bar sb -->
-            <ul class="sb_icon_list">
-                <li class="sb_icon_list_item">
-                    <!-- <i class="material-icons">account_circle</i> -->
-                    <span class="sb_social_list_span"> Profile </span>
-                </li>
-                <li class="sb_icon_list_item">
-                    <!-- <i class="material-icons">face </i> -->
-                    <span class="sb_social_list_span"> Blog </span>
-                </li>
-                <li class="sb_icon_list_item">
-                    <!-- <i class="material-icons">favorite</i> -->
-                    <span class="sb_social_list_span"> Hobbies </span>
-                </li>
-            </ul>
-            <h4 id="social_title">
+            <div id="side_bar_content">
+                <img src="images/oilProfilePic.png" id="logo" alt="profile_logo">
+                <!-- Table for Media icons for side_bar sb -->
+                <ul class="sb_icon_list">
+                    <li class="sb_icon_list_item">
+                        <a href="">
+                            <i class="material-icons">account_circle</i>
+                            <span class="sb_social_list_span"> Profile </span>
+                        </a>
+                    </li>
+                    <li class="sb_icon_list_item">
+                        <a href="">
+                            <i class="material-icons">face </i>
+                            <span class="sb_social_list_span"> Blog </span>
+                        </a>
+                    </li>
+                    <li class="sb_icon_list_item">
+                        <a href="">
+                            <i class="material-icons">favorite</i>
+                            <span class="sb_social_list_span"> Hobbies </span>
+                        </a>
+                    </li>
+                </ul>
+                <h4 id="social_title">
                 <span> LET'S CONNECT </span>
              </h4>
-            <ul id="sb_icon_list">
-                <li href="" class="sb_icon_list_item">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    <span class="sb_social_list_span">LinkedIn </span>
-                </li>
-                <li href="" class="sb_icon_list_item">
-                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
-                    <span class="sb_social_list_span">Youtube </span>
-                </li>
-                <li href="" class="sb_icon_list_item">
-                    <i class="fa fa-file-text" aria-hidden="true"></i>
-                    <span class="sb_social_list_span">Resume </span>
-                </li>
-            </ul>
+                <ul class="sb_icon_list">
+                    <li href="" class="sb_icon_list_item">
+                        <a href="">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            <span class="sb_social_list_span">LinkedIn </span>
+                        </a>
+                    </li>
+                    <li href="" class="sb_icon_list_item">
+                        <a href="href=" https://www.youtube.com/channel/UCRFC7f4QbCGekNnNUxaqbrA "">
+                            <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                            <span class="sb_social_list_span">Youtube </span>
+                        </a>
+                    </li>
+                    <li href="" class="sb_icon_list_item">
+                        <a href="">
+                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                            <span class="sb_social_list_span">Resume </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </aside>
         <!-- END of SideBar -->
         <!-- Main Content -->
@@ -138,7 +152,7 @@
                 <!-- Start of contact -->
                 <div class="card_layout detail" id="contact">
                     <h2> Contact </h2>
-                    <form action="php/contact_form.php" method="post" target="_blank">
+                    <form id="contactForm" action="php/contact_form.php" method="post">
                         <div>
                             <label for="client_name"> Name </label>
                             <input type="text" name="name" id="client_name" maxlength="30" required>
@@ -151,8 +165,10 @@
                             <label for="client_phone"> Phone </label>
                             <input type="phone" name="phone" id="client_phone" minlength="10" max="20">
                         </div>
-                        <label for="client_comment"></label>
-                        <textarea name="comment" id="client_comment" rows="4" cols="50" maxlength="200"> </textarea>
+                        <div>
+                            <label for="client_comment"> Comment </label>
+                            <textarea name="comment" id="client_comment" rows="4" cols="50" maxlength="200"> </textarea>
+                        </div>
                         <input type="submit" value="Send">
                     </form>
                 </div>
